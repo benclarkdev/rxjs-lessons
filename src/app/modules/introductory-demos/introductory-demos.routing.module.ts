@@ -5,8 +5,16 @@ import { ButtonClickComponent } from './components/button-click/button-click.com
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
-  { path: 'button-click', component: ButtonClickComponent }
+  {
+    path: '',
+    component: LandingPageComponent,
+    children: [
+      {
+        path: 'button-click',
+        component: ButtonClickComponent
+      }
+    ]
+  },
 ];
 
 @NgModule({
