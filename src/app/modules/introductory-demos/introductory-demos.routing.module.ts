@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ButtonClickComponent } from './components/button-click/button-click.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { BeatsPerMinuteComponent } from './components/beats-per-minute/beats-per-minute.component';
+import { NowBattingComponent } from './components/now-batting/now-batting.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'bpm',
         component: BeatsPerMinuteComponent
+      },
+      {
+        path: 'now-batting',
+        component: NowBattingComponent
       }
     ]
   },
